@@ -3,7 +3,6 @@
 #include <vector>
 #include <queue>
 #include <algorithm>
-#include <stack>
 using namespace std;
 
 vector<int> dijkstra_shortest_path(const Graph& G, int source, vector<int>& previous){
@@ -49,5 +48,5 @@ vector<int> extract_shortest_path(const vector<int>& distances, const vector<int
 void print_path(const vector<int>& v, int total){
     for (int node : v)
         cout << node << " ";
-    cout << "\nThe total cost is " << total << endl;
+    cout << "\nTotal cost is " << total << endl;
 }
