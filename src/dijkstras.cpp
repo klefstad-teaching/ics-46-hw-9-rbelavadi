@@ -17,6 +17,7 @@ vector<int> dijkstra_shortest_path(const Graph& G, int source, vector<int>& prev
 
     while(!pq.empty()){
         auto[currDist, u] = pq.top();
+        pq.pop();
         if(currDist > distances[u]) continue;
 
         for(const Edge& e : G[u]){
